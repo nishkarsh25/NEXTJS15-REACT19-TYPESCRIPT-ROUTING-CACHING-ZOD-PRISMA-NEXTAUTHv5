@@ -61,5 +61,6 @@ export const createSnippet = async (
 
     return { message: "Some internal server error" };
   }
+  
   redirect("/");
 };
