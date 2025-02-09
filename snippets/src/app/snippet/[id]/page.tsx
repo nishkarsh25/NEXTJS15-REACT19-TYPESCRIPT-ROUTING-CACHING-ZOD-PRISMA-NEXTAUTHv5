@@ -5,7 +5,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 
-
+type SnippetDetailsProps = {
+  params: Promise<{ id: string }>;
+};
 
 
 
