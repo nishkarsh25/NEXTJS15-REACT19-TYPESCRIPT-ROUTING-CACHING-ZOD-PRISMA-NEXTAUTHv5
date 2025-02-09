@@ -6,6 +6,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import React, { useActionState } from "react";
 
+const CreateSnippetPage = () => {
+  
+  const [formStateData,action] = useActionState(createSnippet,{message:""}) 
 
+  
+};
 
 
