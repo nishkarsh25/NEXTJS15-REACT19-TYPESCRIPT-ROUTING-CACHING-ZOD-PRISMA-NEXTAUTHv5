@@ -28,4 +28,4 @@ const CreateSnippetPage = () => {
   );
 };
 
-
+export default CreateSnippetPage;
