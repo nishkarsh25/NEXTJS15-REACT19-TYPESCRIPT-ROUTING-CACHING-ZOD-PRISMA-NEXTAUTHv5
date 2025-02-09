@@ -48,6 +48,6 @@ const SnippetDetailPage: React.FC<SnippetDetailsProps> = async ({ params }) => {
   );
 };
 
-
+export default SnippetDetailPage;
 
 
