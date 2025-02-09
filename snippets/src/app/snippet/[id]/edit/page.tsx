@@ -20,3 +20,4 @@ const EditPageSnippet = async ({
   return <EditSnippetForm snippet={snippet} />;
 };
 
+export default EditPageSnippet;
