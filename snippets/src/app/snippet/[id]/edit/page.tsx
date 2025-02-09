@@ -17,7 +17,6 @@ const EditPageSnippet = async ({
 
   if (!snippet) notFound();
 
-  
-  
+  return <EditSnippetForm snippet={snippet} />;
 };
 
