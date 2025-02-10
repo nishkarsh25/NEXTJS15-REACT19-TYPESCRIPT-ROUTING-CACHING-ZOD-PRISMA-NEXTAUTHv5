@@ -5,6 +5,14 @@ import type { Snippet } from "@prisma/client";
 import { Button } from "./ui/button";
 import { saveSnippet } from "@/actions";
 
+const EditSnippetForm = ({ snippet }: { snippet: Snippet }) => {
+  const [code, setCode] = useState(snippet.code);
 
+  
+
+  
+
+  
+};
 
 
