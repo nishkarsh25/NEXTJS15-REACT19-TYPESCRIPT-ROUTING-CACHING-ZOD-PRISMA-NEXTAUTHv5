@@ -16,7 +16,20 @@ const EditSnippetForm = ({ snippet }: { snippet: Snippet }) => {
 
   return (
     <div className="flex flex-col gap-4">
-      
+      <form
+        action={saveSnippetAction}
+        className="flex items-center justify-between"
+      >
+        <h1 className="font-bold text-xl">Your Code Editor</h1>
+        <Button type="submit">Save</Button>
+      </form>
+      <Editor
+        height="90vh"
+        theme="vs-dark"
+        defaultLanguage="javascript"
+        defaultValue={code}
+        onChange={changeEventHandler}
+      />
     </div>
   );
 };
