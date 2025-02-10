@@ -34,4 +34,4 @@ const EditSnippetForm = ({ snippet }: { snippet: Snippet }) => {
   );
 };
 
-
+export default EditSnippetForm;
