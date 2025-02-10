@@ -12,9 +12,13 @@ const EditSnippetForm = ({ snippet }: { snippet: Snippet }) => {
     setCode(value!);
   };
 
-  
+  const saveSnippetAction = saveSnippet.bind(null, snippet.id, code);
 
-  
+  return (
+    <div className="flex flex-col gap-4">
+      
+    </div>
+  );
 };
 
 
