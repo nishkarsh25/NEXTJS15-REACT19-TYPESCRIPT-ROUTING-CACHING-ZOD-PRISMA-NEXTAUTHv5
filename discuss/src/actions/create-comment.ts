@@ -15,4 +15,69 @@ type CreateCommentState = {
   };
 };
 
+export const createComment = async (
+  { postId, parentId }: { postId: string; parentId?: string },
+  prevState: CreateCommentState,
+  formData: FormData
+): Promise<CreateCommentState> => {
+  const result = createCommentSchema.safeParse({
+    content: formData.get("content"),
+  });
 
+  if (!result.success) {
+    return {
+      errors: result.error.flatten().fieldErrors,
+    };
+  }
+
+  const session = await auth();
+  if (!session || !session.user || !session.user.id) {
+    return {
+      errors: {
+        formError: ["You hae to login first to reply comment"],
+      },
+    };
+  }
+
+  try {
+    await prisma.comment.create({
+      data: {
+        content: result.data.content,
+        postId: postId,
+        userId: session.user.id,
+        parentId: parentId,
+      },
+    });
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return {
+        errors: {
+          formError: [error.message],
+        },
+      };
+    } else {
+      return {
+        errors: {
+          formError: ["Failed to reply comment"],
+        },
+      };
+    }
+  }
+
+  const topic = await prisma.topic.findFirst({
+    where: {
+      posts: { some: { id: postId } },
+    },
+  });
+
+  if (!topic) {
+    return {
+      errors: {
+        formError: ["Failed to get topic"],
+      },
+    };
+  }
+
+  revalidatePath(`/topics/${topic.slug}/posts/${postId}`);
+  return { errors: {} };
+};
