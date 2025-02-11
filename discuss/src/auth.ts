@@ -7,6 +7,7 @@ if (!process.env.GITHUB_CLIENT_ID || !process.env.GITHUB_CLIENT_SECRET) {
   throw new Error("Missing github client id or client secret");
 }
 
+
 export const {
   handlers: { GET, POST },
   auth,
