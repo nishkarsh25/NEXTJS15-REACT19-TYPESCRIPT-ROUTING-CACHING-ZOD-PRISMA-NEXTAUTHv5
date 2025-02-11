@@ -2,4 +2,14 @@
 
 import { redirect } from "next/navigation";
 
+export const search = async (formData: FormData) => {
+    console.log(formData);
+    
+  const term = formData.get("term");
 
+  if (typeof term !== "string" || !term) {
+    redirect("/");
+  }
+
+  redirect(`/search?term=${term}`);
+};
