@@ -14,5 +14,12 @@ const createTopicSchema = z.object({
   description: z.string().min(10),
 });
 
+type createTopicFormState = {
+  errors: {
+    name?: string[];
+    description?: string[];
+    formError?: string[];
+  };
+};
 
 
