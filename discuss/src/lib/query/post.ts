@@ -7,7 +7,20 @@ export type PostWithData = Post & {
   user: { name: string | null };
 };
 
-
+export const fetchPostbyTopicSlug = async (
+  slug: string
+): Promise<PostWithData[]> => {
+  return prisma.post.findMany({
+    where: {
+      topic: { slug },
+    },
+    include: {
+      topic: { select: { slug: true } },
+      _count: { select: { comments: true } },
+      user: { select: { name: true } },
+    },
+  });
+};
 
 
 
