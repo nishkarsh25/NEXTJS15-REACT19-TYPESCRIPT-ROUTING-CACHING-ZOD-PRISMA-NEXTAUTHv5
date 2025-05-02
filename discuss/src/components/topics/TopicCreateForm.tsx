@@ -53,7 +53,9 @@ const TopicCreateForm = () => {
               </p>
             )}
             {formState.errors.formError && (
-              
+              <p className="border border-red-500 bg-red-200 p-2 rounded">
+                {formState.errors.formError}
+              </p>
             )}
           </div>
           <DialogFooter>
