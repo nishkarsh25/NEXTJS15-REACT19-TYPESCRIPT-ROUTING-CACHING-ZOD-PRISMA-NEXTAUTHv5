@@ -58,4 +58,4 @@ const CommentCreateForm: React.FC<CommentCreateFormProps> = ({
   );
 };
 
-
+export default CommentCreateForm;
