@@ -17,7 +17,11 @@ const PostShow: React.FC<PostShowProps> = async ({ postId }) => {
 
   if (!post) notFound();
 
- 
+  return (
+    <div>
+      
+    </div>
+  );
 };
 
 
