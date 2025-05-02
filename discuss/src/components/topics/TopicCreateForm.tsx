@@ -18,7 +18,14 @@ import { useActionState } from "react";
 const TopicCreateForm = () => {
   const [formState, action] = useActionState(createTopics, { errors: {} });
   return (
-    
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button>New topic</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        
+      </DialogContent>
+    </Dialog>
   );
 };
 
