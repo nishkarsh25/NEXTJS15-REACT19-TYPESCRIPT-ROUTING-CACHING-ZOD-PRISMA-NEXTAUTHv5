@@ -10,6 +10,10 @@ type PostShowPageProps = {
   params: Promise<{ slug: true; postId: string }>;
 };
 
+const PostShowPage: React.FC<PostShowPageProps> = async ({ params }) => {
+  const { slug, postId } = await params;
 
+  
+};
 
 
