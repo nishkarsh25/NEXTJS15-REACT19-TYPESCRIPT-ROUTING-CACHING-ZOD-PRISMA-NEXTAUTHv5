@@ -22,11 +22,10 @@ const PostList: React.FC<PostListProps> = async ({ fetchData }) => {
               <h1>{post._count.comments} comments</h1>
             </CardDescription>
           </CardHeader>
-          
         </Card>
       ))}
     </div>
   );
 };
 
-
+export default PostList;
