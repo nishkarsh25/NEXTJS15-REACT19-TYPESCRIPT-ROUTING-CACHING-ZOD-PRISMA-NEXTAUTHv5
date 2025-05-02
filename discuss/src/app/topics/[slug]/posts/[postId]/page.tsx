@@ -30,4 +30,4 @@ const PostShowPage: React.FC<PostShowPageProps> = async ({ params }) => {
   );
 };
 
-
+export default PostShowPage;
