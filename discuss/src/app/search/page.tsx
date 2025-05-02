@@ -16,4 +16,4 @@ const SearchPage: React.FC<SearchPageProps> = async ({ searchParams }) => {
   );
 };
 
-
+export default SearchPage;
