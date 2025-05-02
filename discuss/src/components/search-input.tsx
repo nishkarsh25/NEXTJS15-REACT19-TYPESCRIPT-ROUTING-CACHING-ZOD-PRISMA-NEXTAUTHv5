@@ -6,7 +6,11 @@ import { search } from "@/actions/search";
 
 const SearchInput = () => {
   const searchParams = useSearchParams();
-  
+  return (
+    <form action={search}>
+      
+    </form>
+  );
 };
 
 
