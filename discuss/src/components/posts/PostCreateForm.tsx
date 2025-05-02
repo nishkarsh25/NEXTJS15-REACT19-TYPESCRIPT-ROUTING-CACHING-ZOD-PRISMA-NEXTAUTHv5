@@ -21,7 +21,11 @@ type CreatePostFormProps = {
 
 const PostCreateForm: React.FC<CreatePostFormProps> = ({ slug }) => {
   const [formState, action] = useActionState(createPost.bind(null,slug), { errors: {} });
-  
+  return (
+    <Dialog>
+      
+    </Dialog>
+  );
 };
 
 
