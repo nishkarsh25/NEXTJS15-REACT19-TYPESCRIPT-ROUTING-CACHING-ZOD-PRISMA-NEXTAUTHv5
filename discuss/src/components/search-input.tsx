@@ -4,6 +4,9 @@ import { Input } from "./ui/input";
 import { useSearchParams } from "next/navigation";
 import { search } from "@/actions/search";
 
-
+const SearchInput = () => {
+  const searchParams = useSearchParams();
+  
+};
 
 
