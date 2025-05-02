@@ -22,7 +22,11 @@ const CommentCreateForm: React.FC<CommentCreateFormProps> = ({
     { errors: {} }
   );
 
-  
+  return (
+    <div>
+      
+    </div>
+  );
 };
 
 
