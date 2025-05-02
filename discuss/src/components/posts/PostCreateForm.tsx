@@ -72,4 +72,4 @@ const PostCreateForm: React.FC<CreatePostFormProps> = ({ slug }) => {
   );
 };
 
-
+export default PostCreateForm;
