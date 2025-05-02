@@ -8,6 +8,17 @@ type CommentShowProps = {
   commentId: string;
 };
 
+const CommentShow: React.FC<CommentShowProps> = async ({
+  postId,
+  commentId,
+}) => {
+  const comments = await fetchCommentByPostId(postId);
 
+  
+
+
+
+  
+};
 
 
