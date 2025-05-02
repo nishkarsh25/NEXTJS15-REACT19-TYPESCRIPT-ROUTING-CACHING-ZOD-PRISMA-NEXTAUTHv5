@@ -15,6 +15,11 @@ import { Textarea } from "../ui/textarea";
 import { createTopics } from "@/actions/create-topics";
 import { useActionState } from "react";
 
-
+const TopicCreateForm = () => {
+  const [formState, action] = useActionState(createTopics, { errors: {} });
+  return (
+    
+  );
+};
 
 
