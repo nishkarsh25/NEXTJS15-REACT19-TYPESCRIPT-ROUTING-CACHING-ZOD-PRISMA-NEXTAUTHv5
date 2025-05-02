@@ -11,7 +11,21 @@ const PostList: React.FC<PostListProps> = async ({ fetchData }) => {
 
   console.log(posts);
 
-  
+  return (
+    <div className="flex flex-col gap-2">
+      {posts.map((post, index) => (
+        <Card key={index}>
+          <CardHeader>
+            <CardTitle>{post.title}</CardTitle>
+            <CardDescription className="flex items-center justify-between">
+              <h1>By {post.user.name}</h1>
+              <h1>{post._count.comments} comments</h1>
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      ))}
+    </div>
+  );
 };
 
 
