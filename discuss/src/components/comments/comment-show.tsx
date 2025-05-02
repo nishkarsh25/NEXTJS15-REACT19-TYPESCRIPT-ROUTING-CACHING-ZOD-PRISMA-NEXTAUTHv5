@@ -19,9 +19,13 @@ const CommentShow: React.FC<CommentShowProps> = async ({
     return null;
   }
 
+  const children = comments.filter((c) => c.parentId === commentId);
 
-
-  
+  return (
+    <div className="m-4 p-4 border">
+      
+    </div>
+  );
 };
 
 
