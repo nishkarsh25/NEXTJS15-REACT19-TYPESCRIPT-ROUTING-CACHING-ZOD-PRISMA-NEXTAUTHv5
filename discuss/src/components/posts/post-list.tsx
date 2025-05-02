@@ -7,7 +7,9 @@ type PostListProps = {
 };
 
 const PostList: React.FC<PostListProps> = async ({ fetchData }) => {
-  
+  const posts = await fetchData();
+
+  console.log(posts);
 
   
 };
