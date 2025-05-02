@@ -57,4 +57,4 @@ const AuthHeader = () => {
   return authContent;
 };
 
-
+export default AuthHeader;
