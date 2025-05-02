@@ -8,4 +8,4 @@ const PostCreatePage = () => {
   )
 }
 
-
+export default PostCreatePage
