@@ -23,7 +23,45 @@ const TopicCreateForm = () => {
         <Button>New topic</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
-        
+        <form action={action}>
+          <DialogHeader>
+            <DialogTitle>Create a topic</DialogTitle>
+            <DialogDescription>
+              Write a new topic to start discussion. Click save when you are
+              done.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div>
+              <Label htmlFor="name" className="text-right">
+                Name
+              </Label>
+              <Input id="name" name="name" />
+            </div>
+            {formState.errors.name && (
+              <p className="text-sm text-red-600">{formState.errors.name}</p>
+            )}
+            <div>
+              <Label htmlFor="description" className="text-right">
+                Description
+              </Label>
+              <Textarea id="description" name="description" />
+            </div>
+            {formState.errors.description && (
+              <p className="text-sm text-red-600">
+                {formState.errors.description}
+              </p>
+            )}
+            {formState.errors.formError && (
+              
+            )}
+          </div>
+          <DialogFooter>
+            <Button type="submit" className="w-full">
+              Save changes
+            </Button>
+          </DialogFooter>
+        </form>
       </DialogContent>
     </Dialog>
   );
