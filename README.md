@@ -79,14 +79,18 @@ You can try out the live demo of the app [here](https://nextjs-shadcn-dark-mode-
 ## Screenshots
 
 <!-- Include screenshots or GIFs of your app here to give users a visual representation of what your app looks like. -->
-<img src="https://github.com/nishkarsh25/NEXTJS-ShadcnDarkMode/blob/master/Screenshots/ss1.png" alt="Screenshot 1" width="1000"> 
+<img src="https://github.com/nishkarsh25/NEXTJS15-REACT19-TYPESCRIPT-ROUTING-CACHING-ZOD-PRISMA-NEXTAUTHv5/blob/main/ss1.png?raw=true" alt="Screenshot 1" width="1000"> 
 
-<img src="https://github.com/nishkarsh25/NEXTJS-ShadcnDarkMode/blob/master/Screenshots/ss2.png" alt="Screenshot 1" width="1000"> 
+<img src="https://github.com/nishkarsh25/NEXTJS15-REACT19-TYPESCRIPT-ROUTING-CACHING-ZOD-PRISMA-NEXTAUTHv5/blob/main/ss2.png?raw=true" alt="Screenshot 1" width="1000"> 
+
+<img src="https://github.com/nishkarsh25/NEXTJS15-REACT19-TYPESCRIPT-ROUTING-CACHING-ZOD-PRISMA-NEXTAUTHv5/blob/main/ss3.png?raw=true" alt="Screenshot 1" width="1000"> 
+
+<img src="https://github.com/nishkarsh25/NEXTJS15-REACT19-TYPESCRIPT-ROUTING-CACHING-ZOD-PRISMA-NEXTAUTHv5/blob/main/ss4.png?raw=true" alt="Screenshot 1" width="1000"> 
 
 
 ## GIF's
 
-<img src="https://github.com/nishkarsh25/NEXTJS-ShadcnDarkMode/blob/master/Screenshots/ss3.gif" alt="Screenshot 1" width="1000"> 
+<img src="https://github.com/nishkarsh25/NEXTJS15-REACT19-TYPESCRIPT-ROUTING-CACHING-ZOD-PRISMA-NEXTAUTHv5/blob/main/ss5.gif?raw=true" alt="Screenshot 1" width="1000"> 
 
 
 
