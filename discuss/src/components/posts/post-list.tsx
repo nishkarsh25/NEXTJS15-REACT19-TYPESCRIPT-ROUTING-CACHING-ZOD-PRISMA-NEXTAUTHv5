@@ -6,6 +6,10 @@ type PostListProps = {
   fetchData: () => Promise<PostWithData[]>;
 };
 
+const PostList: React.FC<PostListProps> = async ({ fetchData }) => {
+  
 
+  
+};
 
 
