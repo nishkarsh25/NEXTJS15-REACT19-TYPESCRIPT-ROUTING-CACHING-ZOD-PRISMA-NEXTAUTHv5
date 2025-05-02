@@ -11,6 +11,18 @@ type CommentCreateFormProps = {
   startOpen?: boolean;
 };
 
+const CommentCreateForm: React.FC<CommentCreateFormProps> = ({
+  postId,
+  parentId,
+  startOpen,
+}) => {
+  const [open, setOpen] = useState(startOpen);
+  const [formState, action, isPending] = useActionState(
+    createComment.bind(null, { postId, parentId }),
+    { errors: {} }
+  );
 
+  
+};
 
 
