@@ -23,4 +23,4 @@ const HeaderPage = async () => {
   );
 };
 
-
+export default HeaderPage;
