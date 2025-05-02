@@ -24,7 +24,36 @@ const CommentCreateForm: React.FC<CommentCreateFormProps> = ({
 
   return (
     <div>
-      
+      <Button size={"sm"} variant={"link"} onClick={() => setOpen(!open)}>
+        Reply
+      </Button>
+      {open && (
+        <form className="space-y-2" action={action}>
+          <Textarea
+            name="content"
+            placeholder="Write a comment...."
+            className="bg-gray-100 focus-visible:ring-0"
+          />
+          {formState.errors.content && (
+            <p className="text-red-600 text-sm">{formState.errors.content}</p>
+          )}
+          {formState.errors.formError && (
+            <div className="bg-red-200 border border-red-600 text-sm p-2 rounded">
+              {formState.errors.formError}
+            </div>
+          )}
+          <Button disabled={isPending} size={"sm"} variant={"secondary"}>
+            {isPending ? (
+              <>
+                <Loader2 />
+                Please wait
+              </>
+            ) : (
+              "Save"
+            )}
+          </Button>
+        </form>
+      )}
     </div>
   );
 };
