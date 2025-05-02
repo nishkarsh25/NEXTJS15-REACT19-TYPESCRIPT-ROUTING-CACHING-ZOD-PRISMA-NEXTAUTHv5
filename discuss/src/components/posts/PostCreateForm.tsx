@@ -23,7 +23,51 @@ const PostCreateForm: React.FC<CreatePostFormProps> = ({ slug }) => {
   const [formState, action] = useActionState(createPost.bind(null,slug), { errors: {} });
   return (
     <Dialog>
-      
+      <DialogTrigger asChild>
+        <Button>New Post</Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-[425px]">
+        <form action={action}>
+          <DialogHeader>
+            <DialogTitle>Create a post</DialogTitle>
+            <DialogDescription>
+              Write a new post. Click save when you are done.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div>
+              <Label htmlFor="title" className="text-right">
+                Title
+              </Label>
+              <Input id="title" name="title" />
+            </div>
+            {formState.errors.title && (
+              <p className="text-sm text-red-600">{formState.errors.title}</p>
+            )}
+            <div>
+              <Label htmlFor="content" className="text-right">
+                Content
+              </Label>
+              <Textarea id="content" name="content" />
+            </div>
+            {formState.errors.content && (
+              <p className="text-sm text-red-600">
+                {formState.errors.content}
+              </p>
+            )}
+            {formState.errors.formError && (
+              <p className="border border-red-500 bg-red-200 p-2 rounded">
+                {formState.errors.formError}
+              </p>
+            )}
+          </div>
+          <DialogFooter>
+            <Button type="submit" className="w-full">
+              Save changes
+            </Button>
+          </DialogFooter>
+        </form>
+      </DialogContent>
     </Dialog>
   );
 };
