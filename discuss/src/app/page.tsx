@@ -14,7 +14,6 @@ const Home = async () => {
         <TopicCreateForm />
       </div>
     </div>
-    
   );
 };
 
