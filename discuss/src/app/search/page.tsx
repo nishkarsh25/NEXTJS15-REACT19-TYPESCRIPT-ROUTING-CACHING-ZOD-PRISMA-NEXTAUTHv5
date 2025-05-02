@@ -6,6 +6,13 @@ type SearchPageProps = {
   searchParams: Promise<{ term: string }>;
 };
 
-
+const SearchPage: React.FC<SearchPageProps> = async ({ searchParams }) => {
+  const term = (await searchParams).term;
+  return (
+    <div>
+      
+    </div>
+  );
+};
 
 
