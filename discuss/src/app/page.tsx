@@ -5,6 +5,15 @@ import React from "react";
 
 const Home = async () => {
   return (
+    <div className="grid grid-cols-4 gap-4 p-4">
+      <div className="col-span-3">
+        <h1 className="text-xl font-bold m-2">Top posts</h1>
+        <PostList fetchData={fetchTopPosts}/>
+      </div>
+      <div>
+        <TopicCreateForm />
+      </div>
+    </div>
     
   );
 };
