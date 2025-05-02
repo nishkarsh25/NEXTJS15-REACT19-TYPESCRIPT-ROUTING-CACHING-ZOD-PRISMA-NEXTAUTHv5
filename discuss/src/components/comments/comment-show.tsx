@@ -46,4 +46,4 @@ const CommentShow: React.FC<CommentShowProps> = async ({
   );
 };
 
-
+export default CommentShow;
