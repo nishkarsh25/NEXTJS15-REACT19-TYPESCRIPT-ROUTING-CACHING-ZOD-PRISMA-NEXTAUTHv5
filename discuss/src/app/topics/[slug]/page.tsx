@@ -16,11 +16,10 @@ const TopicShowPage: React.FC<TopicShowPageProps> = async ({ params }) => {
         <PostList fetchData={() => fetchPostbyTopicSlug(slug)} />
       </div>
       <div>
-        
         <PostCreateForm slug={slug} />
       </div>
     </div>
   );
 };
 
-
+export default TopicShowPage;
