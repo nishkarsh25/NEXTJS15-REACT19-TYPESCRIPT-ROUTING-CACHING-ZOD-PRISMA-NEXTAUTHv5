@@ -12,10 +12,12 @@ const CommentShow: React.FC<CommentShowProps> = async ({
   postId,
   commentId,
 }) => {
-  
   const comments = await fetchCommentByPostId(postId);
 
-  
+  const comment = comments.find((c) => c.id === commentId);
+  if (!comment) {
+    return null;
+  }
 
 
 
