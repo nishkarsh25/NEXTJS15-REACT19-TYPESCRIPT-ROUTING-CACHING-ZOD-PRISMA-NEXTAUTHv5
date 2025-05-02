@@ -10,6 +10,16 @@ import { PopoverContent } from "@radix-ui/react-popover";
 import { LogOut } from "lucide-react";
 import { Separator } from "./ui/separator";
 
+const AuthHeader = () => {
+  const session = useSession();
 
+  if (session.status === "loading") return null;
+
+  let authContent: React.ReactNode;
+
+  
+
+  
+};
 
 
