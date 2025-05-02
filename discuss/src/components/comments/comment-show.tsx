@@ -23,7 +23,25 @@ const CommentShow: React.FC<CommentShowProps> = async ({
 
   return (
     <div className="m-4 p-4 border">
-      
+      <div className="flex gap-3">
+        <Avatar>
+          <AvatarImage src={comment.user.image || ""} />
+        </Avatar>
+        <div className="flex-1 space-y-3">
+          <p className="text-gray-500 text-sm font-medium">
+            {comment.user.name}
+          </p>
+          <p className="text-gray-800">{comment.content}</p>
+          <CommentCreateForm postId={comment.postId} parentId={comment.id} />
+        </div>
+      </div>
+      {children.map((comment) => (
+        <CommentShow
+          key={comment.id}
+          postId={postId}
+          commentId={comment.id}
+        />
+      ))}
     </div>
   );
 };
