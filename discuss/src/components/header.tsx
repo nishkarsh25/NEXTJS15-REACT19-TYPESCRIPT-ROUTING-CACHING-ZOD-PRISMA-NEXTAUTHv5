@@ -16,7 +16,9 @@ const HeaderPage = async () => {
           <SearchInput />
         </Suspense>
       </div>
-      
+      <div className="flex justify-end gap-2">
+        <AuthHeader />
+      </div>
     </div>
   );
 };
