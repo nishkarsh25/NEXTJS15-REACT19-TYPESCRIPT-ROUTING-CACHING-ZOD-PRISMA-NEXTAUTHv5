@@ -15,8 +15,13 @@ import { Textarea } from "../ui/textarea";
 import { useActionState } from "react";
 import { createPost } from "@/actions/create-post";
 
+type CreatePostFormProps = {
+  slug: string;
+};
 
-
-
+const PostCreateForm: React.FC<CreatePostFormProps> = ({ slug }) => {
+  const [formState, action] = useActionState(createPost.bind(null,slug), { errors: {} });
+  
+};
 
 
