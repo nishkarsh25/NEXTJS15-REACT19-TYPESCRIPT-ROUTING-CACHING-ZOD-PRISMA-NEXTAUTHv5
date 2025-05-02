@@ -24,7 +24,6 @@ const PostList: React.FC<PostListProps> = async ({ fetchData }) => {
           </CardHeader>
         </Card>
       ))}
-      
     </div>
   );
 };
