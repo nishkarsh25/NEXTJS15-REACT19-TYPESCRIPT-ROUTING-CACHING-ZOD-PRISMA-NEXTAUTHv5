@@ -7,6 +7,9 @@ type TopicShowPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-
+const TopicShowPage: React.FC<TopicShowPageProps> = async ({ params }) => {
+  const slug = (await params).slug;
+  
+};
 
 
