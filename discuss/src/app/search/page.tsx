@@ -10,7 +10,8 @@ const SearchPage: React.FC<SearchPageProps> = async ({ searchParams }) => {
   const term = (await searchParams).term;
   return (
     <div>
-      
+      <h1 className="text-blue font-medium italic">Search result for {term}</h1>
+      <PostList fetchData={() => fetchPostBySearch(term)} />
     </div>
   );
 };
