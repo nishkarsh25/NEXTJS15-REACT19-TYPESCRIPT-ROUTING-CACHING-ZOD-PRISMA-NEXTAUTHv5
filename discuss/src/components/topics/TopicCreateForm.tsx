@@ -69,4 +69,4 @@ const TopicCreateForm = () => {
   );
 };
 
-
+export default TopicCreateForm;
