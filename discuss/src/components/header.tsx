@@ -8,6 +8,14 @@ const HeaderPage = async () => {
   // we try to keep as much page as static pages as possible so that caching can be implemented
   return (
     <div className="grid grid-cols-3 mt-2">
+      <div className="flex justify-start">
+        <h1 className="font-bold text-xl">Discuss</h1>
+      </div>
+      <div>
+        <Suspense>
+          <SearchInput />
+        </Suspense>
+      </div>
       
     </div>
   );
