@@ -27,4 +27,4 @@ const CommentList: React.FC<CoommentListProps> = async ({ postId }) => {
   );
 };
 
-
+export default CommentList;
