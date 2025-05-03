@@ -33,9 +33,9 @@ The core highlight of this project is the implementation of **nested Prisma quer
 
 ## Live Demo
 
-You can try out the live demo of the discuss app [here](https://nextjs-15-react-19-typescript-routing-caching-zod-mgkmkwio2.vercel.app/).
-You can try out the live demo of the routing app [here](https://nextjs-15-react-19-typescript-routing-caching-zod-pkc6v4omr.vercel.app/).
-You can try out the live demo of the snippets app [here](https://nextjs-15-react-19-typescript-routing-caching-zod-87l6bp9g9.vercel.app/).
+- You can try out the live demo of the discuss app [here](https://nextjs-15-react-19-typescript-routing-caching-zod-mgkmkwio2.vercel.app/).
+- You can try out the live demo of the routing app [here](https://nextjs-15-react-19-typescript-routing-caching-zod-pkc6v4omr.vercel.app/).
+- You can try out the live demo of the snippets app [here](https://nextjs-15-react-19-typescript-routing-caching-zod-87l6bp9g9.vercel.app/).
 
 ## Folder Structure
 
